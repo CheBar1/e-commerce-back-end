@@ -16,6 +16,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+
 // find one category by its `id` value
 router.get('/:id', async (req, res) => {
   try {
@@ -50,7 +51,6 @@ router.post('/', async (req, res) => {
 // update a category by its `id` value 
 router.put('/:id', async (req, res) => {
   try {
-// calls the update method on the Category model
   const updatedCategory = await Category.update(
     { id: req.params.id,
       category_name: req.body.category_name
