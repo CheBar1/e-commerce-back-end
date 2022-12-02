@@ -52,18 +52,17 @@ router.put('/:id', async (req, res) => {
   try {
 // calls the update method on the Tag model 
     const updatedTag = await Tag.update(
-      { id: req.params.id,
-        tag_name: req.body.tag_name},
+      { tag_name: req.body.tag_name},
 // gets a tag based on the id given in the request parameters
       { where: {
         id: req.params.id
       }
     });
-    if (!updatedTag[0]){
+    if (!updatedTag){
       res.status(404).json({message: 'No tag found with this id!'});
       return;
     };
-    res.status(200).json(upatedTag);
+    res.status(200).json(updatedTag);
   } catch (err) {
     res.status(500).json(err);
   }
