@@ -26,7 +26,7 @@ The walkthrough video provided demonstrates:
 POST, PUT, and DELETE routes for categories, products, and tags being tested in Insomnia Core.
 
 ## Demo
-* View the [Demo](https://drive.google.com)
+* View the [Demo](https://drive.google.com/file/d/1SYREq1_amOzds12sNXaagL0Oi-hX3rOc/view)
 
 ## User-Story
 AS A manager at an internet retail company
